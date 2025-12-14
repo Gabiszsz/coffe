@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: rgb(49, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* ===== NAV ===== */
+.topnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 6px 10px;
+}
+
+.topnav ul li a:hover {
+    background-color: rgba(185, 183, 183, 0.5);
+    color: rgb(14, 13, 13);
+    border-radius: 4px;
+}
+
+/* Ícone hambúrguer */
+.topnav .icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-image: url("https://media.istockphoto.com/id/842366134/pt/foto/roasted-coffee-beans.jpg?s=2048x2048&w=is&k=20&c=Hr0c6eBg3by1Dz9dxKb1GzTuzFp2or47vRtcgrJsYM4=");
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px 40px;
+    margin-left: 5%;
+    max-width: 600px;
+    color: rgb(75, 36, 3);
+    text-align: left;
+    border-radius: 6px;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cafe-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== BOTÃO ===== */
+button {
+    background-color: #421e04;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(49, 24, 24);
+    color: white;
+}
+
+/* ===== RESPONSIVO + HAMBÚRGUER ===== */
+@media screen and (max-width: 700px) {
+
+    .topnav ul {
+        display: none;
+    }
+
+    .topnav .icon {
+        display: block;
+    }
+
+    .topnav ul.responsive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(49, 24, 24);
+        padding: 10px 0;
+    }
+
+    .topnav ul.responsive li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+    }
+}
+
+/* REMOVE QUALQUER MARCADOR DE LISTA EM QUALQUER SITUAÇÃO */
+.topnav ul,
+.topnav ul li {
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* REMOVE O MARKER MODERNO (::marker) */
+.topnav ul li::marker {
+    content: none;
+}
+
+/* GARANTE QUE O HAMBÚRGUER NÃO TENHA DECORAÇÃO */
+.topnav .icon {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero {
+    position: relative;
+}
+
+.topnav a:hover::after {
+    width: 100%;
+}
+
+#tipos > .cafe-item:first-child h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#tipos h2 {
+    background-color:rgb(49, 24, 24);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+main #tipos .cafe-item:first-child h2 {
+    color: #fff;
+}
+
+#receitas {
+    margin-top: 80px;
+}
+
+#receitas h2 {
+    display: inline-block;
+    background-color: rgb(49, 24, 24);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 6px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 8px;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.container img {
+    transition: filter 0.4s ease;
+}
+
+.container img:hover {
+    filter: brightness(0.85);
+}
+
+/* ---------- SEÇÃO CONTATO ---------- */
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+}
+
+/* cada coluna */
+.contato-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contato h4 {
+    color: rgb(49, 24, 24);;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contato p {
+    margin-bottom: 0.6rem;
+    color: #333;
+}
+
+/* botão */
+.contato button {
+    background-color: rgb(49, 24, 24);;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.contato button:hover {
+    opacity: 0.9;
+}
+
+/* link */
+.contato a {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: rgb(49, 24, 24);
+    text-decoration: underline;
+}
+
+/* redes sociais */
+.social-text {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.contato i {
+    font-size: 1.6rem;
+    color: rgb(49, 24, 24);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contato i:hover {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+    .contato {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+.contato-box:last-child {
+    padding-top: 2.6rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;   /* tamanho equilibrado */
+    margin-left: 2rem;
+}
+
+/*
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: rgb(49, 24, 24);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.topnav ul li a:hover {
+  background-color: rgba(185, 183, 183, 0.5);
+  color: rgb(14, 13, 13);
+  border-radius: 4px;
+}
+
+.topnav ul li .icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: url("https://media.istockphoto.com/id/842366134/pt/foto/roasted-coffee-beans.jpg?s=2048x2048&w=is&k=20&c=Hr0c6eBg3by1Dz9dxKb1GzTuzFp2or47vRtcgrJsYM4=");
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align:justify;
+  color: rgb(75, 36, 3);
+}
+
+.hero h1 {
+  text-align:start;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  text-shadow: #696767;
+  padding: 10%;
+  width: 100vw;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cafe-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #421e04;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #411e06;
+    color: white;
+}
+
+*/

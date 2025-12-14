@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Adicionado Font Awesome para o ícone do hambúrguer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/photo/2018/03/11/17/36/coffee-3217471_1280.png" alt="Logo do cafe">
+        </div>
+        <!-- Adicionada classe 'topnav' ao nav para corresponder ao CSS -->
+        <nav class="topnav">
+            <!-- Adicionada classe 'nav-menu' ao ul para funcionalidade do hambúrguer -->
+            <ul class="nav-menu">
+                <li><a href="#tipos">Tipos de Café</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button class="icon" onclick="myFunction()" aria-label="Abrir menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+
+        </nav>
+    </header>
+    <section class="hero d-flex align-items-center">
+        <h1 class="hero-title">Bem vindo ao Mundo do Café!</h1>
+    </section>
+    <main>
+        <section id="tipos">
+            <div class="cafe-item">
+                <h2>Conheça nossos tipos de grãos</h2>
+                <h3>Café Arábica</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisl nec nulla congue, quis
+                    mattis nunc pulvinar.
+                    Nam non auctor nulla. In lacinia tempor dui a facilisis. In non leo arcu. Duis sagittis non sapien
+                    vel
+                    interdum. Nulla condimentum nulla eget lectus vehicula pretium. Orci varius natoque penatibus et
+                    magnis
+                    dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+            <div class="container">
+                <img src="https://media.istockphoto.com/id/1371315270/pt/foto/coffee-beans-in-the-hand-of-a-worker.jpg?s=2048x2048&w=is&k=20&c=xjEnZFpDVtL0gQ8ZHsj9o1aGRFq4eugzJCWNIzZVFvE="
+                    alt="café arabica">
+            </div>
+            <div class="cafe-item">
+                <h3>Café Bourbon</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisl nec nulla congue,
+                    quis
+                    mattis nunc pulvinar. Nam non auctor nulla. In lacinia tempor dui a facilisis. In non leo arcu.
+                    Duis sagittis non sapien vel interdum. Nulla condimentum nulla eget lectus vehicula pretium.
+                    Orci
+                    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="container">
+                <img src="https://cdn.awsli.com.br/2548/2548474/arquivos/cafe-bourbon-1024x768.jpg" alt="café bourbon">
+            </div>
+            <div class="cafe-item">
+                <h3>Café Robusta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisl nec nulla
+                    congue,
+                    quis
+                    mattis nunc pulvinar. Nam non auctor nulla. In lacinia tempor dui a facilisis. In non leo
+                    arcu.
+                    Duis
+                    sagittis non sapien vel interdum. Nulla condimentum nulla eget lectus vehicula pretium. Orci
+                    varius
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="container">
+                <img src="https://blog.cafeamerica.com.br/wp-content/uploads/2024/09/cafe-robusta.jpg"
+                    alt="café robusta">
+            </div>
+        </section>
+
+        <section id="receitas">
+            <h2>Receitas</h2>
+
+            <p class="section-desc">
+                Descubra diferentes formas de preparar o seu café favorito, desde os clássicos
+                até combinações especiais para o dia a dia.
+            </p>
+
+            <button id="receita-btn" class="btn btn-dark">
+                Mostrar Receita Aleatória
+            </button>
+            <p id="receita-display"></p>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="contato-box">
+                <h4>Entre em contato</h4>
+                <p>Telefone: +55 64 98765-4321</p>
+                <p>Endereço: Rua tal</p>
+                <p>Email: email@cafe.com</p>
+            </div>
+
+            <div class="contato-box">
+                <a href="#">Compartilhe sua experiência</a>
+
+                <p class="social-text">Acompanhe-nos nas redes sociais</p>
+
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservados. </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.pixabay.com/photo/2018/03/11/17/36/coffee-3217471_1280.png" alt="Logo do cafe">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#tipos">Tipos de Café</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Bem vindo ao Mundo do Café!</h1>
+    </section>
+    <main>
+
+        <section id="tipos">
+            <div class="cafe-item"></div>
+            <h2>Conheça nossos tipos de grãos</h2>
+            <div class="container">
+                <h3>Café Arábica</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisl nec nulla congue, quis
+                    mattis nunc pulvinar.
+                    Nam non auctor nulla. In lacinia tempor dui a facilisis. In non leo arcu. Duis sagittis non sapien
+                    vel
+                    interdum. Nulla condimentum nulla eget lectus vehicula pretium. Orci varius natoque penatibus et
+                    magnis
+                    dis parturient montes, nascetur ridiculus mus.
+                </p>
+                <div class="container">
+                    <img src="https://media.istockphoto.com/id/1371315270/pt/foto/coffee-beans-in-the-hand-of-a-worker.jpg?s=2048x2048&w=is&k=20&c=xjEnZFpDVtL0gQ8ZHsj9o1aGRFq4eugzJCWNIzZVFvE="
+                        alt="café arabica">
+                </div>
+                <div class="cafe-item">
+                    <h3>Café Bourbon</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisl nec nulla congue,
+                        quis
+                        mattis nunc pulvinar. Nam non auctor nulla. In lacinia tempor dui a facilisis. In non leo arcu.
+                        Duis sagittis non sapien vel interdum. Nulla condimentum nulla eget lectus vehicula pretium.
+                        Orci
+                        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.awsli.com.br/2548/2548474/arquivos/cafe-bourbon-1024x768.jpg"
+                        alt="café bourbon">
+
+                    <div class="cafe-item">
+                        <h3>Café Robusta</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisl nec nulla
+                            congue,
+                            quis
+                            mattis nunc pulvinar. Nam non auctor nulla. In lacinia tempor dui a facilisis. In non leo
+                            arcu.
+                            Duis
+                            sagittis non sapien vel interdum. Nulla condimentum nulla eget lectus vehicula pretium. Orci
+                            varius
+                            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                    <div class="container">
+                        <img src="https://blog.cafeamerica.com.br/wp-content/uploads/2024/09/cafe-robusta.jpg"
+                            alt="café robusta">
+        </section>
+
+        <section id="receitas">
+            <h2>Receitas</h2>
+            <button id="receita-btn">Mostrar Receita Aleatória</button>
+            <p id="receita-display"></p>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <p>Contato: email@cafe.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
